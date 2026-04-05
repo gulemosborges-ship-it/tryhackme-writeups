@@ -15,9 +15,9 @@ hydra -l admin -P passlist.txt www.onlineshop.thm http-post-form "/login:usernam
 - **-V** → Mostrar cada tentativa
 
 ## Funcionamento
-O Hydra um ataque de dicionário, testando várias senhas automaticamente em um usuário especifico.
+Ataques de dicionário funcionam porque muitas pessoas utilizam senhas fracas ou comuns, como "123456", "qwerty" ou "password". Além disso, é frequente a reutilização de senhas em vários serviços diferentes.
 
-No comando, o trecho "F=incorrect" define que, caso a resposta do servidor contenha essa mensagem, a tentativa foi considerada falha.
+O Hydra se aproveita disso testando automaticamente uma lista de senhas prováveis contra um usuário específico. Para cada tentativa, ele analisa a resposta do servidor — se a resposta contiver a mensagem definida em F=, a tentativa foi falha. Quando a resposta for diferente, a senha foi encontrada.
 
 ## Resultado
 Após a execução do ataque de dicionário com o Hydra:
