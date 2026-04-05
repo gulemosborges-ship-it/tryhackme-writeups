@@ -27,7 +27,7 @@ O Gobuster utiliza uma lista de palavras para revelar possíveis diretórios ocu
 - /login  
 - /uploads  
 
-Se o servidor responder positivamente, significa que o diretório existe.
+Se retornar 200, o diretório existe. Se retornar 404, não existe.
 
 ## Resultados
 
